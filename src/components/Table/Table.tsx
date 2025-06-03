@@ -5,7 +5,7 @@ import {
     flexRender,
     createColumnHelper,
 } from "@tanstack/react-table";
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import Modal from "../Modals/Modal";
 import clients from "@/mocks/clients.json";
 import styles from "./table.module.scss";
@@ -13,8 +13,6 @@ import styles from "./table.module.scss";
 const columnHelper = createColumnHelper<Client>();
 
 const Table = () => {
-    const [clienteSeleccionado, setClienteSeleccionado] =
-        useState<Client | null>(null);
     const data = useMemo(() => clients as Client[], []);
 
     const columns = useMemo(
@@ -89,9 +87,9 @@ const Table = () => {
                 </tbody>
             </table>
             <Modal
-                isOpen={!!clienteSeleccionado}
-                onClose={() => setClienteSeleccionado(null)}
-                client={clienteSeleccionado}
+                isOpen={false}
+                onClose={() => (null)}
+                client={{} as Client}
             />
         </div>
     );
