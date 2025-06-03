@@ -16,7 +16,6 @@ const eslintConfig = [
             eqeqeq: "error",
             "no-var": "error",
             "prefer-const": "off",
-            "no-console": "off",
             "require-await": "warn",
             "no-unused-vars": "warn",
             "no-inline-comments": "off",
