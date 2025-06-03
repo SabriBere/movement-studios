@@ -1,5 +1,5 @@
-import styles from "./page.module.css";
+import Table from "@/components/Table/Table";
 
 export default function Home() {
-    return <div className={styles.page}>Hola</div>;
+    return <Table />;
 }
