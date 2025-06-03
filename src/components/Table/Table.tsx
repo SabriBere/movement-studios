@@ -7,7 +7,7 @@ import {
 } from "@tanstack/react-table";
 import { useMemo } from "react";
 import clients from "@/mocks/clients.json";
-import styles from "./table.module.scss";
+// import styles from "./table.module.scss";
 
 const columnHelper = createColumnHelper<Client>();
 

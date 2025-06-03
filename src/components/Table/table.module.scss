@@ -2,4 +2,49 @@
 @use "sass:map";
 
 .wrapper {
+    padding: 1rem;
+    background-color: map.get($colorsGrey, greyBackgroud);
+    border-radius: 0.5rem;
+    box-shadow: map.get($shadows, base8);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: map.get($colorsGrey, white);
+    font-size: 0.95rem;
+    color: map.get($colorsGrey, black);
+}
+
+th,
+td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid map.get($colorsGrey, greyMedium);
+}
+
+th {
+    background-color: map.get($colorsBrand, principal100);
+    color: map.get($colorsBrand, principal800);
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: map.get($colorsGrey, greyLight);
+}
+
+button {
+    background-color: map.get($colorsBrand, principal700);
+    color: map.get($colorsGrey, white);
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: map.get($colorsBrand, principal900);
+    }
 }
