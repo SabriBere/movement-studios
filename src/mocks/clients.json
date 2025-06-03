@@ -30,9 +30,9 @@
         "id": "4",
         "nombre": "Ana Torres",
         "email": "ana.torres@example.com",
-        "pais": "España",
-        "telefono": "+34 612 345 678",
-        "direccion": "Calle Mayor 101, Madrid",
+        "pais": "Colombia",
+        "telefono": "+57 301 345 678",
+        "direccion": "Calle Mayor 101, Calí",
         "historial": ["Compra 6", "Compra 7", "Reclamo"]
     },
     {
