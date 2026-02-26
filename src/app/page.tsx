@@ -1,5 +1,3 @@
-import Table from "@/components/Table/Table";
-
 export default function Home() {
-    return <Table />;
+    return <h1>Hola</h1>;
 }
