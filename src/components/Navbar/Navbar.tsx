@@ -15,7 +15,7 @@ const desktopNavItems = [
 const mobileNavItems = [
     { label: "Classes", href: "/classes", className: "bg-cian text-black" },
     { label: "About us", href: "/about", className: "bg-cian text-black" },
-    { label: "Book with us", href: "#booking", className: "bg-fucsia text-white" },
+    { label: "Book with us", href: "#booking", className: "bg-fucsia text-black" },
 ];
 
 export default function Navbar({ className = "" }: NavbarProps) {
@@ -55,7 +55,7 @@ export default function Navbar({ className = "" }: NavbarProps) {
                             <a
                                 key={item.label}
                                 href={item.href}
-                                className={`block border-b border-black/20 px-4 py-4 text-lg font-semibold last:border-b-0 ${item.className}`}
+                                className={`block border-b border-black/20 px-4 py-4 text-lg font-semibold transition hover:bg-white hover:!text-black last:border-b-0 ${item.className}`}
                                 onClick={() => setIsOpen(false)}
                             >
                                 {item.label}

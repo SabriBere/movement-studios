@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 type FooterProps = {
     className?: string;
@@ -8,16 +8,16 @@ const footerItems = [
     {
         label: "Our Socials",
         href: "#socials",
-        className: "bg-blue-barry text-white",
+        className: "bg-blue-barry !text-white",
     },
     {
         label: "Email us",
         href: "mailto:hello@movementstudios.com",
-        className: "bg-black text-white",
+        className: "bg-black !text-white",
     },
     {
         label: "Book with us",
-        href: "#booking",
+        href: "/booking",
         className: "bg-fucsia text-black",
     },
 ];
