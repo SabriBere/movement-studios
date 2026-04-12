@@ -1,25 +1,25 @@
 "use client";
-import Link from "next/link";
 import { useState } from "react";
+import Link from "next/link";
 
 type NavbarProps = {
     className?: string;
 };
 
 const desktopNavItems = [
-    { label: "Classes", href: "#classes" },
-    { label: "About", href: "#about" },
+    { label: "Classes", href: "/classes" },
+    { label: "About", href: "/about" },
     { label: "224 Nostrand Ave, Brooklyn, NY", href: "#location" },
 ];
 
 const mobileNavItems = [
-    { label: "Classes", href: "#classes", className: "bg-cian text-black" },
-    { label: "About us", href: "#about", className: "bg-cian text-black" },
+    { label: "Classes", href: "/classes", className: "bg-cian text-black" },
+    { label: "About us", href: "/about", className: "bg-cian text-black" },
     { label: "Book with us", href: "#booking", className: "bg-fucsia text-white" },
 ];
 
 export default function Navbar({ className = "" }: NavbarProps) {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState<boolean>(false);
 
     return (
         <nav
