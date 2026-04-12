@@ -1,3 +1,10 @@
+import Herobar from "@/components/Hero/Herobar";
+
 export default function Home() {
-    return <h1>Hola</h1>;
+    return (
+        <main className="min-h-screen bg-white">
+            <Herobar />
+            <div>Rest of the content</div>
+        </main>
+    );
 }
