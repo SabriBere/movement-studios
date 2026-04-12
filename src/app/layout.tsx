@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
-    title: "Challenge Front",
+    title: "Landing Frontend",
 };
 
 export default function RootLayout({
@@ -12,7 +14,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <Navbar />
             <body>{children}</body>
+            <Footer />
         </html>
     );
 }
