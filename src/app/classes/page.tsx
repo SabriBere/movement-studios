@@ -2,8 +2,9 @@ import React from 'react'
 
 const Classes = () => {
     return (
-        <main className="min-h-screen bg-white px-4 py-4 sm:px-6 lg:px-8">
+        <main className="min-h-screen bg-white">
             Classes
+            <div>Rest of the content</div>
         </main>
     )
 }
