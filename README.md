@@ -1,6 +1,6 @@
 # 💃 Movement Studios Landing
 
-Landing page created from a Figma base design to explore styling, responsive composition, and a visual direction for a dance studio brand.
+Movement Studios Landing is a design-to-code implementation built from a Figma Community concept. The project uses a strong visual reference to explore modern frontend workflows, responsive layouts, component structure, UI polish, and newer tooling such as Tailwind CSS, animation workflows, Biome, Bun, and AI-assisted iteration.
 
 Base design: [Moody Dance Studio Figma Community Template](https://www.figma.com/site/k0QnEnpTm9bneFM0b5gHRX/Moody-Dance-Studio--Community-?node-id=0-1&p=f&t=60ASKd1N13MXZzd9-0)
 
