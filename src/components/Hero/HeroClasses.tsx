@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroClasses = () => {
   return (
-    <div>HeroClasses</div>
+    <section>HeroClasses</section>
   )
 }
 

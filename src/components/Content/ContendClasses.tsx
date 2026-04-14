@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ContendClasses = () => {
+const ContentClasses = () => {
   return (
     <div>ContendClasses</div>
   )
 }
 
-export default ContendClasses
+export default ContentClasses
