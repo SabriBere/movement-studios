@@ -1,11 +1,10 @@
-# Movement Studios Landing
+# 💃 Movement Studios Landing
 
 Landing page created from a Figma base design to explore styling, responsive composition, and a visual direction for a dance studio brand.
 
-Base design:
-https://www.figma.com/site/k0QnEnpTm9bneFM0b5gHRX/Moody-Dance-Studio--Community-?node-id=0-1&p=f&t=60ASKd1N13MXZzd9-0
+Base design: [Moody Dance Studio Figma Community Template](https://www.figma.com/site/k0QnEnpTm9bneFM0b5gHRX/Moody-Dance-Studio--Community-?node-id=0-1&p=f&t=60ASKd1N13MXZzd9-0)
 
-## Goal
+## 🎯 Goal
 
 This project works as a frontend practice and exploration space, especially for trying:
 
@@ -15,26 +14,30 @@ This project works as a frontend practice and exploration space, especially for 
 - Bun as an alternative runtime/package manager.
 - Next.js and React to structure a modern component-based landing page.
 
-## Current Stack
+## 🧰 Current Stack
 
 - Next.js
 - React
 - TypeScript
 - Tailwind CSS
 
-## Development
+## 🚀 Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build
+## 🏗️ Build
 
 ```bash
 npm run build
 ```
 
-## Deployment
+## ▲ Deployment
 
 This project is intended to be deployed on Vercel.
+
+## 🤖 AI-Assisted Development
+
+This project was built with AI-assisted coding as part of the development workflow, using AI tools to iterate on layout, responsive behavior, styling, and documentation.
