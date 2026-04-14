@@ -1,53 +1,43 @@
-# 🛠️ Challenge - Corrección de Bugs en el Frontend
+# 💃 Movement Studios Landing
 
-Este proyecto simula una pequeña app de gestión de clientes. El frontend ya está armado pero contiene errores y funcionalidades incompletas que deberás solucionar. Tu tarea es corregir los errores indicados abajo y entregar un proyecto con un build limpio y funcional.
+Movement Studios Landing is a design-to-code implementation built from a Figma Community concept. The project uses a strong visual reference to explore modern frontend workflows, responsive layouts, component structure, UI polish, and newer tooling such as Tailwind CSS, animation workflows, Biome, Bun, and AI-assisted iteration.
 
----
+Base design: [Moody Dance Studio Figma Community Template](https://www.figma.com/site/k0QnEnpTm9bneFM0b5gHRX/Moody-Dance-Studio--Community-?node-id=0-1&p=f&t=60ASKd1N13MXZzd9-0)
 
-## ✅ Objetivo
+## 🎯 Goal
 
-Corregir los siguientes errores presentes en el código y dejar la aplicación funcionando correctamente:
+This project works as a frontend practice and exploration space, especially for trying:
 
----
+- Tailwind CSS for layout, responsive design, and design tokens.
+- Animation technologies such as Lottie.
+- Biome as an alternative tool for formatting and linting.
+- Bun as an alternative runtime/package manager.
+- Next.js and React to structure a modern component-based landing page.
 
-## 🐞 Bugs a solucionar
+## 🧰 Current Stack
 
-- ❌ **Problemas en el llamado de los estilos de la tabla**  
-  Algunos estilos no se están aplicando como se espera. Verificá los imports y el uso correcto de los módulos CSS/SASS.
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
 
-- ❌ **Errores de tipado en TypeScript**  
-  Hay definiciones de tipos incorrectas o faltantes que rompen el build. Debés revisar y corregir la tipificación.
-
-- ❌ **Warnings de SASS**  
-  Se han introducido intencionalmente errores de sintaxis en algunos archivos `.scss`. Corregilos para tener un build limpio.
-
-- ❌ **El modal no se abre**  
-  Al hacer clic en el botón `"Más"` de cada fila, el modal de detalle del cliente no se muestra. Debería abrirse y mostrar la información completa del cliente.
-
-- ❌ **Falta la funcionalidad de filtro por país**  
-  Agregá un campo select (dropdown) para filtrar la lista de clientes por país. El filtro debe actualizar los resultados en tiempo real o al seleccionar un valor.
-
----
-
-## 📦 Requisitos para entregar
-
-- ✅ La app debe funcionar correctamente en modo desarrollo y build (`npm run build` debe ejecutarse sin errores ni warnings).
-- ✅ El modal debe abrirse correctamente y mostrar los datos del cliente seleccionado.
-- ✅ El filtro por país debe estar implementado.
-- ✅ Los estilos de la tabla deben verse correctamente.
-- ✅ No deben quedar errores ni advertencias en consola ni en el build.
-
----
-
-## 🧪 Cómo probar
+## 🚀 Development
 
 ```bash
-# Instalar dependencias
 npm install
-
-# Correr el proyecto
 npm run dev
+```
 
-# Validar el build final
+## 🏗️ Build
+
+```bash
 npm run build
 ```
+
+## ▲ Deployment
+
+This project is intended to be deployed on Vercel.
+
+## 🤖 AI-Assisted Development
+
+This project was built with AI-assisted coding as part of the development workflow, using AI tools to iterate on layout, responsive behavior, styling, and documentation.
