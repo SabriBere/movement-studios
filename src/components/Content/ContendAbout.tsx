@@ -1,6 +1,7 @@
 import Image, { type StaticImageData } from "next/image";
 import sophiaImage from "@/styles/Ilustrations/Frame 2147236306.jpg";
 import alisaImage from "@/styles/Ilustrations/Frame 2147236292.jpg";
+import spaceImage from "@/styles/Ilustrations/Frame 2147236292 (1).jpg";
 
 type AboutPerson = {
     description?: string;
@@ -122,6 +123,62 @@ function InstructorTile({ instructor }: { instructor: AboutPerson }) {
     );
 }
 
+function SpaceSection() {
+    return (
+        <div className="bg-black">
+            <div className="grid border-b border-white/15 lg:grid-cols-[2fr_1fr]">
+                <div className="relative min-h-[250px] overflow-hidden bg-grey sm:min-h-[340px] lg:min-h-[390px]">
+                    <Image
+                        src={spaceImage}
+                        alt="Dance studio space"
+                        fill
+                        className="object-cover grayscale"
+                        sizes="(min-width: 1024px) 67vw, 100vw"
+                    />
+                    <div className="absolute inset-0 bg-black/10" />
+                </div>
+
+                <div className="flex min-h-[250px] items-center border-t border-white/15 bg-black px-5 py-8 text-white sm:px-8 lg:border-l lg:border-t-0 lg:px-14">
+                    <div className="max-w-[22rem]">
+                        <h2 className="text-xl leading-none font-semibold tracking-[-0.04em]">
+                            Our Space
+                        </h2>
+                        <p className="mt-6 text-sm leading-tight text-white/75">
+                            Whether you&apos;re a beginner looking to explore
+                            expressive movement or an advanced dancer ready to
+                            refine your technique, we have classes for{" "}
+                            <span className="font-semibold text-fucsia">
+                                you! Join our weekly sessions, drop in for open
+                                choreography,
+                            </span>{" "}
+                            or take part in our special upcoming choreography
+                            series. Don&apos;t miss our special Masterclass with
+                            Maxime Longue this Saturday! Limited spots available
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-blue-barry px-5 py-16 text-white sm:px-12 sm:py-20 lg:px-[12vw] lg:py-28">
+                <div className="max-w-4xl">
+                    <p className="max-w-3xl text-3xl leading-[0.96] font-semibold tracking-[-0.05em] sm:text-4xl lg:text-5xl">
+                        Whether you&apos;re a beginner looking to explore
+                        expressive movement or an advanced dancer ready to
+                        refine your technique, we have classes for you!
+                    </p>
+
+                    <a
+                        href="/booking"
+                        className="mt-8 inline-flex h-10 items-center justify-center bg-cian px-7 text-sm font-medium !text-black transition hover:bg-fucsia hover:!text-white"
+                    >
+                        Reserve your spot
+                    </a>
+                </div>
+            </div>
+        </div>
+    );
+}
+
 export default function ContendAbout() {
     return (
         <section className="bg-black text-white">
@@ -151,6 +208,8 @@ export default function ContendAbout() {
                     ))}
                 </div>
             </div>
+
+            <SpaceSection />
         </section>
     );
 }
