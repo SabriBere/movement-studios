@@ -1,10 +1,12 @@
 import React from 'react'
+import ContendAbout from '@/components/Content/ContendAbout'
+import HeroAbout from '@/components/Hero/HeroAbout'
 
 const About = () => {
     return (
         <main className="min-h-screen bg-white">
-            About
-            <div>Rest of the content</div>
+            <HeroAbout />
+            <ContendAbout />
         </main>
     )
 }
