@@ -1,9 +1,9 @@
 import Image, { type StaticImageData } from "next/image";
 import contactImprovisationImage from "@/styles/Ilustrations/dance-2.jpeg";
 import jazzTechniqueImage from "@/styles/Ilustrations/dance-4.jpeg";
-import hipHopFreestyleImage from "@/styles/Ilustrations/dance-3.jpeg";
+import hipHopFreestyleImage from "@/styles/Ilustrations/dance-11.jpg";
 import hipHopFoundationsImage from "@/styles/Ilustrations/dance-1.jpeg";
-import jazzFunkImage from "@/styles/Ilustrations/Frame 2147236306.jpg";
+import jazzFunkImage from "@/styles/Ilustrations/dance-6.jpeg";
 import ourPromise from '@/styles/Ilustrations/dance-5.jpeg'
 
 type ClassCard = {

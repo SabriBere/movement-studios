@@ -1,7 +1,7 @@
 import Image, { type StaticImageData } from "next/image";
-import sophiaImage from "@/styles/Ilustrations/Frame 2147236306.jpg";
-import alisaImage from "@/styles/Ilustrations/Frame 2147236292.jpg";
-import spaceImage from "@/styles/Ilustrations/Frame 2147236292 (1).jpg";
+import sophiaImage from "@/styles/Ilustrations/dance-8.jpg";
+import alisaImage from "@/styles/Ilustrations/dance-9.jpg";
+import spaceImage from "@/styles/Ilustrations/dance-7.jpeg";
 
 type AboutPerson = {
     description?: string;
