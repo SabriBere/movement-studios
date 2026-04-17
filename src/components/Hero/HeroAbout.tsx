@@ -1,5 +1,5 @@
 import Image from "next/image";
-import aboutHeroImage from "@/styles/Ilustrations/dance-17.jpg";
+import aboutHeroImage from "@/styles/Ilustrations/dance-18.jpg";
 
 const HeroAbout = () => {
   return (

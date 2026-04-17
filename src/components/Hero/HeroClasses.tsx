@@ -1,5 +1,5 @@
 import Image from "next/image";
-import classesHeroImage from '@/styles/Ilustrations/dance-18.jpg'
+import classesHeroImage from '@/styles/Ilustrations/dance-19.jpg'
 
 const HeroClasses = () => {
   return (
