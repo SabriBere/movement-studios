@@ -1,5 +1,5 @@
 import Image from "next/image";
-import heroImage from '@/styles/Ilustrations/dance-14.jpg'
+import heroImage from '@/styles/Ilustrations/dance-15.jpg'
 
 type HerobarProps = {
     heading?: string;
@@ -33,7 +33,7 @@ export default function Herobar({
 
                     <Image
                         src={heroImage}
-                        alt={"our promises"}
+                        alt={"findFlow"}
                         fill
                         className="object-cover z-0"
                         sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
