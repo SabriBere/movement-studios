@@ -1,3 +1,6 @@
+import Image from "next/image";
+import heroImage from '@/styles/Ilustrations/dance-15.jpg'
+
 type HerobarProps = {
     heading?: string;
     title?: string;
@@ -23,13 +26,22 @@ export default function Herobar({
                 <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(0deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:128px_128px] opacity-45" />
 
                 <div className="relative z-10 flex min-h-[380px] flex-col justify-between px-6 pt-10 pb-24 sm:min-h-[470px] sm:px-8 sm:pt-12 lg:min-h-[510px] lg:px-8 lg:pt-12">
-                    <h1 className="whitespace-pre-line text-[clamp(4.5rem,16vw,10rem)] leading-[0.86] font-semibold tracking-[-0.04em] text-white">
+
+                    <h1 className="whitespace-pre-line text-[clamp(4.5rem,16vw,10rem)] leading-[0.86] font-semibold tracking-[-0.04em] text-white z-20">
                         {heading}
                     </h1>
 
+                    <Image
+                        src={heroImage}
+                        alt={"findFlow"}
+                        fill
+                        className="object-cover z-0"
+                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    />
+
                     <a
                         href="/booking"
-                        className="inline-flex w-fit bg-cian px-6 py-4 text-sm font-normal !text-black transition hover:bg-white sm:px-7"
+                        className="inline-flex w-fit bg-cian px-6 py-4 text-sm font-normal !text-black transition hover:bg-white sm:px-7 z-20"
                     >
                         {title}
                     </a>
