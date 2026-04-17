@@ -1,14 +1,25 @@
-const sectionHeight = "min-h-[720px] md:h-[50vw] lg:h-[640px]";
-const panelHeight = "min-h-[360px] md:h-full";
+import Image from "next/image";
+import sophiaImage from "@/styles/Ilustrations/dance-8.jpg";
+import alisaImage from "@/styles/Ilustrations/dance-9.jpg";
+import visionImage from '@/styles/Ilustrations/dance-16.jpg'
+import classesImage from '@/styles/Ilustrations/dance-12.jpg'
 
 const ContentHome = () => {
+    const sectionHeight = "min-h-[720px] md:h-[50vw] lg:h-[640px]";
+    const panelHeight = "min-h-[360px] md:h-full";
+
     return (
         <section className="bg-white text-black">
             {/* Vision */}
             <div className={`grid grid-cols-1 border-b border-black/40 md:grid-cols-2 md:items-stretch ${sectionHeight}`}>
                 <div className={`relative overflow-hidden bg-grey ${panelHeight}`}>
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_42%_48%,rgba(255,255,255,0.3),transparent_28%),linear-gradient(135deg,#111111_0%,#575757_55%,#222222_100%)]" />
-                    <div className="absolute inset-0 bg-black/10" />
+                    <Image
+                        src={classesImage}
+                        alt={"visionImage"}
+                        fill
+                        className="object-cover z-0"
+                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    />
                     <h2 className=" whitespace-pre-line absolute left-8 top-8 text-[clamp(4rem,10vw,8rem)] leading-none font-semibold tracking-[-0.08em] text-white md:left-10 md:top-10">
                         Vision
                     </h2>
@@ -34,8 +45,13 @@ const ContentHome = () => {
             {/* Classes */}
             <div className={`grid grid-cols-1 border-b border-black/40 md:grid-cols-2 md:items-stretch ${sectionHeight}`}>
                 <div className={`relative overflow-hidden bg-grey ${panelHeight}`}>
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_42%_48%,rgba(255,255,255,0.3),transparent_28%),linear-gradient(135deg,#111111_0%,#575757_55%,#222222_100%)]" />
-                    <div className="absolute inset-0 bg-black/10" />
+                    <Image
+                        src={visionImage}
+                        alt={"visionImage"}
+                        fill
+                        className="object-cover z-0"
+                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    />
                     <h2 className=" whitespace-pre-line absolute left-8 top-8 text-[clamp(4rem,10vw,8rem)] leading-none font-semibold tracking-[-0.08em] text-white md:left-10 md:top-10">
                         Classes
                     </h2>
@@ -78,8 +94,15 @@ const ContentHome = () => {
                 <div className={`grid bg-grey ${panelHeight}`}>
                     <article className="grid grid-rows-[1fr_auto]">
                         <div className="relative min-h-[240px] overflow-hidden bg-grey md:min-h-0">
-                            <div className="absolute inset-0 bg-[radial-gradient(circle_at_62%_34%,rgba(255,255,255,0.38),transparent_24%),linear-gradient(135deg,#171717_0%,#575757_50%,#2b2b2b_100%)]" />
-                            <div className="absolute inset-0 bg-black/10" />
+                            <Image
+                                src={sophiaImage}
+                                alt={"sophia"}
+                                fill
+                                className="object-cover"
+                                sizes={
+                                    "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                                }
+                            />
                         </div>
                         <div className="bg-fucsia px-6 py-4 text-black">
                             <h3 className="text-xl font-bold tracking-[-0.04em]">
@@ -93,8 +116,15 @@ const ContentHome = () => {
 
                     <article className="grid grid-rows-[1fr_auto]">
                         <div className="relative min-h-[240px] overflow-hidden bg-grey md:min-h-0">
-                            <div className="absolute inset-0 bg-[radial-gradient(circle_at_42%_34%,rgba(255,255,255,0.36),transparent_26%),linear-gradient(155deg,#202020_0%,#777777_48%,#222222_100%)]" />
-                            <div className="absolute inset-0 bg-black/10" />
+                            <Image
+                                src={alisaImage}
+                                alt={"alisa"}
+                                fill
+                                className="object-cover"
+                                sizes={
+                                    "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                                }
+                            />
                         </div>
                         <div className="bg-cian px-6 py-4 text-black">
                             <h3 className="text-xl font-bold tracking-[-0.04em]">
