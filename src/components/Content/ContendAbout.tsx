@@ -1,7 +1,7 @@
 import Image, { type StaticImageData } from "next/image";
 import sophiaImage from "@/styles/Ilustrations/dance-8.jpg";
 import alisaImage from "@/styles/Ilustrations/dance-9.jpg";
-import spaceImage from "@/styles/Ilustrations/dance-7.jpeg";
+import spaceImage from "@/styles/Ilustrations/dance-20.jpg";
 
 type AboutPerson = {
     description?: string;
@@ -127,12 +127,12 @@ function SpaceSection() {
     return (
         <div className="bg-black">
             <div className="grid border-b border-white/15 lg:grid-cols-[2fr_1fr]">
-                <div className="relative min-h-[250px] overflow-hidden bg-grey sm:min-h-[340px] lg:min-h-[390px]">
+                <div className="relative min-h-[280px] overflow-hidden bg-grey sm:min-h-[380px] lg:min-h-[500px]">
                     <Image
                         src={spaceImage}
                         alt="Dance studio space"
                         fill
-                        className="object-cover grayscale"
+                        className="object-cover object-[center_18%] grayscale"
                         sizes="(min-width: 1024px) 67vw, 100vw"
                     />
                     <div className="absolute inset-0 bg-black/10" />
