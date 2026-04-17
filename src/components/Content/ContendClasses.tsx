@@ -97,7 +97,7 @@ function ClassCard({ item }: { item: ClassCard }) {
                     <p className="px-4 py-3 text-blue-barry">{item.schedule}</p>
                     <a
                         href="/booking"
-                        className="flex items-center justify-center border-l border-black/40 text-black transition hover:bg-blue-barry hover:text-white"
+                        className="flex items-center justify-center border-l border-black/40 text-black transition hover:bg-blue-barry hover:!text-white"
                     >
                         Book Now
                     </a>
