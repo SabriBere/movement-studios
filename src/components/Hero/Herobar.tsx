@@ -15,7 +15,7 @@ const defaultTickerItems = [
 
 export default function Herobar({
     heading = "Find your\nflow.",
-    title = "Reserve your spot.",
+    title = "Reserve your spot",
     tickerItems = defaultTickerItems,
 }: HerobarProps) {
     return (
