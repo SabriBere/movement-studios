@@ -1,5 +1,6 @@
 import Image from "next/image";
 import heroImage from '@/styles/Ilustrations/dance-15.jpg'
+import ButtonsCards from "../Buttons/ButtonsCards";
 
 type HerobarProps = {
     heading?: string;
@@ -39,12 +40,14 @@ export default function Herobar({
                         sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                     />
 
-                    <a
+
+                    {/* <a
                         href="/booking"
                         className="inline-flex w-fit bg-cian px-6 py-4 text-sm font-normal !text-black transition hover:bg-white sm:px-7 z-20"
                     >
                         {title}
-                    </a>
+                    </a> */}
+                    <ButtonsCards title={"Reserve your spot"}/>
                 </div>
 
                 <div className="absolute inset-x-0 bottom-0 z-20 flex h-12 items-center overflow-hidden bg-blue-barry text-xs font-semibold text-white sm:h-[54px] sm:text-sm">
