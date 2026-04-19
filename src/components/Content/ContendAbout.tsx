@@ -2,6 +2,7 @@ import Image, { type StaticImageData } from "next/image";
 import sophiaImage from "@/styles/Ilustrations/dance-8.jpg";
 import alisaImage from "@/styles/Ilustrations/dance-9.jpg";
 import spaceImage from "@/styles/Ilustrations/dance-20.jpg";
+import ButtonsBooking from "../Buttons/ButtonsBooking";
 
 type AboutPerson = {
     description?: string;
@@ -91,9 +92,8 @@ function FounderTile({ founder, index }: { founder: AboutPerson; index: number }
             </div>
 
             <div
-                className={`px-5 py-5 text-black ${
-                    isSecond ? "bg-cian" : "bg-fucsia"
-                }`}
+                className={`px-5 py-5 text-black ${isSecond ? "bg-cian" : "bg-fucsia"
+                    }`}
             >
                 <h3 className="text-xl leading-none font-bold tracking-[-0.05em]">
                     {founder.name}
@@ -167,12 +167,7 @@ function SpaceSection() {
                         refine your technique, we have classes for you!
                     </p>
 
-                    <a
-                        href="/booking"
-                        className="mt-8 inline-flex h-10 items-center justify-center bg-cian px-7 text-sm font-medium !text-black transition hover:bg-fucsia hover:!text-white"
-                    >
-                        Reserve your spot
-                    </a>
+                    <ButtonsBooking title={"Reserve your spot"} />
                 </div>
             </div>
         </div>

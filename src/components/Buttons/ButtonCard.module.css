@@ -1,5 +1,0 @@
-@reference "../../app/globals.css";
-
-.containerButton {
-  @apply inline-flex w-fit bg-cian px-6 py-4 text-sm font-normal text-black transition hover:bg-white sm:px-7 z-20;
-}
