@@ -3,6 +3,8 @@ import sophiaImage from "@/styles/Ilustrations/dance-8.jpg";
 import alisaImage from "@/styles/Ilustrations/dance-9.jpg";
 import visionImage from '@/styles/Ilustrations/dance-16.jpg'
 import classesImage from '@/styles/Ilustrations/dance-12.jpg'
+import ButtonsBooking from "../Buttons/ButtonsBooking";
+import ButtonCards from "../Buttons/ButtonCards";
 
 const ContentHome = () => {
     const sectionHeight = "min-h-[720px] md:h-[50vw] lg:h-[640px]";
@@ -33,12 +35,7 @@ const ContentHome = () => {
                         <p className="mt-8 text-lg leading-tight tracking-[-0.03em] text-black/85 md:text-xl">
                             {"At Movement Studio, we’re passionate about creating a supportive and inspiring environment for dancers of all levels. Whether you’re a complete beginner eager to explore the world of modern dance, a seasoned performer looking to refine your technique, or simply someone who finds joy in moving, you’ll find a home here."}
                         </p>
-                        <a
-                            href="/about"
-                            className="mt-10 inline-flex bg-blue-barry !text-white px-8 py-4 text-base font-normal transition hover:bg-cian hover:!text-black"
-                        >
-                            About us
-                        </a>
+                        <ButtonCards text={"About us"} />
                     </div>
                 </div>
             </div>
@@ -65,12 +62,7 @@ const ContentHome = () => {
                         <p className="mt-8 text-lg leading-tight tracking-[-0.03em] text-black/85 md:text-xl">
                             {"Get your groove on with Hip Hop, find your rhythm in Jazz, and explore connection in Contact Improvisation. Movement Studio offers a diverse range of classes for every dancer."}
                         </p>
-                        <a
-                            href="/about"
-                            className="mt-10 inline-flex bg-blue-barry !text-white px-8 py-4 text-base font-normal transition hover:bg-cian hover:!text-black"
-                        >
-                            Reserve your spot
-                        </a>
+                        <ButtonCards text={"Reserve your spot"} />
                     </div>
                 </div>
             </div>
@@ -145,12 +137,7 @@ const ContentHome = () => {
                         expressive movement or an advanced dancer ready to
                         refine your technique, we have classes for you!
                     </p>
-                    <a
-                        href="/booking"
-                        className="mt-8 inline-flex bg-cian px-7 py-4 text-sm font-normal !text-black transition hover:bg-white"
-                    >
-                        Reserve your spot
-                    </a>
+                    <ButtonsBooking title={"Reserve your spot"} />
                 </div>
             </div>
         </section>

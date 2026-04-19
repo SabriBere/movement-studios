@@ -1,6 +1,6 @@
 import Image from "next/image";
 import heroImage from '@/styles/Ilustrations/dance-15.jpg'
-import ButtonsCards from "../Buttons/ButtonsCards";
+import ButtonsBooking from "../Buttons/ButtonsBooking";
 
 type HerobarProps = {
     heading?: string;
@@ -16,7 +16,6 @@ const defaultTickerItems = [
 
 export default function Herobar({
     heading = "Find your\nflow.",
-    title = "Reserve your spot",
     tickerItems = defaultTickerItems,
 }: HerobarProps) {
     return (
@@ -39,15 +38,7 @@ export default function Herobar({
                         className="object-cover z-0"
                         sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                     />
-
-
-                    {/* <a
-                        href="/booking"
-                        className="inline-flex w-fit bg-cian px-6 py-4 text-sm font-normal !text-black transition hover:bg-white sm:px-7 z-20"
-                    >
-                        {title}
-                    </a> */}
-                    <ButtonsCards title={"Reserve your spot"}/>
+                    <ButtonsBooking title={"Reserve your spot"} />
                 </div>
 
                 <div className="absolute inset-x-0 bottom-0 z-20 flex h-12 items-center overflow-hidden bg-blue-barry text-xs font-semibold text-white sm:h-[54px] sm:text-sm">
