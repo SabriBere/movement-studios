@@ -1,0 +1,19 @@
+@reference "../../app/globals.css";
+
+.containerHeroCommon {
+    @apply w-full overflow-hidden bg-black text-white;
+}
+
+.heroImage {
+    @apply object-cover;
+}
+
+.content {
+    @apply relative z-10 flex min-h-[380px] flex-col justify-between px-6 pt-10 pb-24;
+    @apply sm:min-h-[470px] sm:px-8 sm:pt-12;
+    @apply lg:px-8 lg:pt-12;
+}
+
+.title {
+    @apply whitespace-pre-line text-[clamp(4.5rem,16vw,10rem)] leading-[0.86] font-light tracking-[-0.04em] text-white;
+}
