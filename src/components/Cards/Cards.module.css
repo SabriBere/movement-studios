@@ -1,0 +1,13 @@
+@reference "../../app/globals.css";
+
+.containerQuote {
+    @apply bg-blue-barry px-8 py-16 text-white sm:px-16 md:px-28 lg:px-36 lg:py-28;
+}
+
+.containerTextQuote {
+    @apply max-w-5xl
+}
+
+.text{
+    @apply text-3xl leading-tight font-semibold tracking-[-0.04em] sm:text-4xl lg:text-5xl
+}

@@ -3,8 +3,8 @@ import sophiaImage from "@/styles/Ilustrations/dance-8.jpg";
 import alisaImage from "@/styles/Ilustrations/dance-9.jpg";
 import visionImage from '@/styles/Ilustrations/dance-16.jpg'
 import classesImage from '@/styles/Ilustrations/dance-12.jpg'
-import ButtonsBooking from "../Buttons/ButtonsBooking";
 import ButtonCards from "../Buttons/ButtonCards";
+import QuoteCards from "../Cards/QuoteCards";
 
 const ContentHome = () => {
     const sectionHeight = "min-h-[720px] md:h-[50vw] lg:h-[640px]";
@@ -130,16 +130,7 @@ const ContentHome = () => {
                 </div>
             </div>
 
-            <div className="bg-blue-barry px-8 py-16 text-white sm:px-16 md:px-28 lg:px-36 lg:py-28">
-                <div className="max-w-5xl">
-                    <p className="text-3xl leading-tight font-semibold tracking-[-0.04em] sm:text-4xl lg:text-5xl">
-                        Whether you&apos;re a beginner looking to explore
-                        expressive movement or an advanced dancer ready to
-                        refine your technique, we have classes for you!
-                    </p>
-                    <ButtonsBooking title={"Reserve your spot"} />
-                </div>
-            </div>
+            <QuoteCards />
         </section>
     )
 }

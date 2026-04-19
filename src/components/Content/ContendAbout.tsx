@@ -3,6 +3,7 @@ import sophiaImage from "@/styles/Ilustrations/dance-8.jpg";
 import alisaImage from "@/styles/Ilustrations/dance-9.jpg";
 import spaceImage from "@/styles/Ilustrations/dance-20.jpg";
 import ButtonsBooking from "../Buttons/ButtonsBooking";
+import QuoteCards from "../Cards/QuoteCards";
 
 type AboutPerson = {
     description?: string;
@@ -159,17 +160,7 @@ function SpaceSection() {
                 </div>
             </div>
 
-            <div className="bg-blue-barry px-5 py-16 text-white sm:px-12 sm:py-20 lg:px-[12vw] lg:py-28">
-                <div className="max-w-4xl">
-                    <p className="max-w-3xl text-3xl leading-[0.96] font-semibold tracking-[-0.05em] sm:text-4xl lg:text-5xl">
-                        Whether you&apos;re a beginner looking to explore
-                        expressive movement or an advanced dancer ready to
-                        refine your technique, we have classes for you!
-                    </p>
-
-                    <ButtonsBooking title={"Reserve your spot"} />
-                </div>
-            </div>
+            <QuoteCards />
         </div>
     );
 }
