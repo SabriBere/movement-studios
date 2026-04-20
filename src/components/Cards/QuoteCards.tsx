@@ -1,6 +1,6 @@
 import React from 'react'
 import ButtonsBooking from '../Buttons/ButtonsBooking'
-import styles from './Cards.module.css'
+import styles from './QuoteCards.module.css'
 
 const QuoteCards = () => {
     return (
