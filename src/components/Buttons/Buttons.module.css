@@ -1,0 +1,9 @@
+@reference "../../app/globals.css";
+
+.containerButtonBooking {
+  @apply mt-8 inline-flex w-fit bg-cian px-6 py-4 text-sm font-normal text-black transition hover:bg-fucsia hover:text-white sm:px-7 z-20;
+}
+
+.containerOtherButtons {
+  @apply mt-10 inline-flex bg-blue-barry !text-white px-8 py-4 text-base font-normal transition hover:bg-blue hover:!text-white
+}
