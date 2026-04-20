@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image,  { StaticImageData }  from "next/image";
 import styles from "./Hero.module.css";
 
-const Hero = ({ image, title }: { image: any, title: string }) => {
+const Hero = ({ image, title }: { image: StaticImageData, title: string }) => {
   return (
     <section className={styles.containerHeroCommon}>
       <div className="relative min-h-[430px] overflow-hidden bg-[#171717] sm:min-h-[520px] lg:min-h-[565px]">

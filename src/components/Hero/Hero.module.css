@@ -17,3 +17,5 @@
 .title {
     @apply whitespace-pre-line text-[clamp(4.5rem,16vw,10rem)] leading-[0.86] font-light tracking-[-0.04em] text-white;
 }
+
+.containerCarousel{}
