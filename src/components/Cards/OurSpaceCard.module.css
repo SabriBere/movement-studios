@@ -1,0 +1,48 @@
+@reference "../../app/globals.css";
+
+.container {
+    @apply bg-black;
+}
+
+.gridWrapper {
+    @apply grid border-b border-white/15 lg:grid-cols-[2fr_1fr];
+}
+
+/* IMAGE */
+.imageWrapper {
+    @apply relative min-h-[280px] overflow-hidden bg-grey 
+         sm:min-h-[380px] lg:min-h-[500px];
+}
+
+.image {
+    @apply object-cover object-[center_18%] grayscale;
+}
+
+.overlay {
+    @apply absolute inset-0 bg-black/10;
+}
+
+/* CONTENT */
+.content {
+    @apply flex min-h-[250px] items-center 
+         border-t border-white/15 bg-black 
+         px-5 py-8 text-white 
+         sm:px-8 
+         lg:border-l lg:border-t-0 lg:px-14;
+}
+
+.contentInner {
+    @apply max-w-[22rem];
+}
+
+.title {
+    @apply text-xl font-semibold leading-none tracking-[-0.04em];
+}
+
+.text {
+    @apply mt-6 text-sm leading-tight text-white/75;
+}
+
+.highlight {
+    @apply font-semibold text-fucsia;
+}
