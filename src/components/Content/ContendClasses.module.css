@@ -1,0 +1,59 @@
+@reference "../../app/globals.css";
+
+.section {
+    @apply bg-black text-white;
+}
+
+/* GRID PRINCIPAL */
+.gridWrapper {
+    @apply grid lg:grid-cols-[minmax(260px,30vw)_1fr];
+}
+
+/* ASIDE (títulos laterales) */
+.asideTop {
+    @apply border-b border-white/20 bg-black px-4 py-6 
+         lg:border-b-0 lg:px-4 lg:py-4;
+}
+
+.asideBottom {
+    @apply border-t border-white/15 bg-black px-4 py-5 
+         lg:px-4 lg:py-4;
+}
+
+.asideTitle {
+    @apply text-3xl font-semibold leading-tight tracking-[-0.06em] 
+         sm:text-4xl lg:sticky lg:top-24;
+}
+
+.asideTitleSmall {
+    @apply max-w-[12rem];
+}
+
+/* GRID DE CARDS */
+.cardsContainer {
+    @apply grid grid-cols-1 bg-white text-black sm:grid-cols-2;
+}
+
+/* PROMISE BLOCK */
+.promiseWrapper {
+    @apply bg-black;
+}
+
+.promiseTextContainer {
+    @apply bg-blue-barry px-6 py-6 text-white sm:px-8;
+}
+
+.promiseText {
+    @apply max-w-3xl text-2xl font-semibold leading-tight tracking-[-0.04em] 
+         sm:text-3xl;
+}
+
+/* IMAGEN */
+.imageWrapper {
+    @apply relative min-h-[320px] overflow-hidden bg-grey 
+         sm:min-h-[420px] lg:min-h-[520px];
+}
+
+.image {
+    @apply object-cover;
+}

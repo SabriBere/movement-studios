@@ -1,1 +1,53 @@
 @reference "../../app/globals.css";
+
+.card {
+    @apply grid overflow-hidden border-b border-r border-black/40 bg-white;
+}
+
+.cardWide {
+    @apply md:col-span-2;
+}
+
+.imageWrapper {
+    @apply relative min-h-[260px] overflow-hidden bg-grey sm:min-h-[300px] lg:min-h-[280px];
+}
+
+.image {
+    @apply object-cover;
+}
+
+.overlay {
+    @apply absolute inset-0 bg-black/10;
+}
+
+.code {
+    @apply absolute left-5 top-3 text-[clamp(4rem,12vw,7rem)] font-light leading-none tracking-[-0.08em] text-white;
+}
+
+.content {
+    @apply grid min-h-[150px] grid-rows-[1fr_auto];
+}
+
+.contentBody {
+    @apply p-4 sm:p-5;
+}
+
+.title {
+    @apply text-2xl font-bold tracking-[-0.05em];
+}
+
+.description {
+    @apply mt-2 max-w-xl text-sm leading-tight text-black/80;
+}
+
+.footer {
+    @apply grid grid-cols-[1fr_86px] border-t border-black/40 text-xs;
+}
+
+.schedule {
+    @apply px-4 py-3 text-blue-barry;
+}
+
+.link {
+    @apply flex items-center justify-center border-l border-black/40 text-black transition hover:bg-blue-barry hover:!text-white;
+}
