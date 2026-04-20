@@ -1,0 +1,66 @@
+@reference "../../app/globals.css";
+
+.footer {
+    @apply w-full overflow-hidden;
+}
+
+/* TOP SECTION */
+.topContainer {
+    @apply bg-cian px-7 py-9 text-black
+         sm:px-9 sm:py-10
+         lg:grid lg:min-h-[460px] lg:grid-cols-[1fr_0.95fr_1.05fr] lg:px-14 lg:py-10;
+}
+
+.logo {
+    @apply max-w-[8ch] text-[clamp(4rem,12vw,8rem)] leading-[0.86] font-semibold tracking-[-0.07em];
+}
+
+.infoColumn {
+    @apply mt-8 space-y-6 text-sm leading-tight
+         sm:text-base
+         lg:mt-0;
+}
+
+.addressColumn {
+    @apply mt-6 space-y-8 text-sm leading-tight
+         sm:text-base
+         lg:mt-0;
+}
+
+.addressText {
+    @apply mt-6 max-w-[23rem];
+}
+
+.link {
+    @apply mt-2 inline-block hover:underline;
+}
+
+.linkUnderline {
+    @apply mt-2 inline-block underline underline-offset-2;
+}
+
+/* BOTTOM SECTION */
+.bottomGrid {
+    @apply grid grid-cols-1 sm:grid-cols-3;
+}
+
+.footerItem {
+    @apply flex min-h-40 items-start px-7 py-7 text-2xl font-bold tracking-tight transition
+         hover:bg-white hover:!text-black
+         sm:min-h-[170px] sm:px-7 sm:py-8
+         md:min-h-[190px] md:px-9
+         lg:min-h-[170px] lg:px-10;
+}
+
+/* VARIANTS */
+.blue {
+    @apply bg-blue-barry text-white;
+}
+
+.black {
+    @apply bg-black text-white;
+}
+
+.fucsia {
+    @apply bg-fucsia text-black;
+}
