@@ -145,12 +145,7 @@ export default function ContentClasses() {
                             src={ourPromise}
                             alt={"our promises"}
                             fill
-                            // className="object-cover grayscale"
-                            sizes={
-                                // item.wide
-                                //     ? "(min-width: 1024px) 66vw, 100vw"
-                                "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                            }
+                            className="object-cover"
                         />
                     </div>
                 </div>
