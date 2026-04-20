@@ -1,8 +1,9 @@
+import{ FoundersCards }from "../Cards/FoundersCards";
 import QuoteCards from "../Cards/QuoteCards";
 import HomeCards from "../Cards/HomeCards";
 import visionImage from '@/styles/Ilustrations/dance-16.jpg'
 import classesImage from '@/styles/Ilustrations/dance-12.jpg'
-import FoundersCards from "../Cards/FoundersCards";
+
 
 
 const ContentHome = () => {
