@@ -1,4 +1,7 @@
-import styles from './Footer.module.css'
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import styles from "./Footer.module.css";
 
 type FooterProps = {
     className?: string;
@@ -8,23 +11,49 @@ const footerItems = [
     {
         label: "Our Socials",
         href: "#socials",
-        className: "bg-blue-barry !text-white",
     },
     {
         label: "Email us",
         href: "mailto:hello@movementstudios.com",
-        className: "bg-black !text-white",
     },
     {
         label: "Book with us",
         href: "/booking",
-        className: "bg-fucsia text-black",
     },
 ];
 
 export default function Footer({ className = "" }: FooterProps) {
+    const ref = useRef<HTMLDivElement | null>(null);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const element = ref.current;
+
+        if (!element) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                } else {
+                    setIsVisible(false);
+                }
+            },
+            {
+                threshold: 0.2,
+            }
+        );
+
+        observer.observe(element);
+
+        return () => {
+            observer.unobserve(element);
+            observer.disconnect();
+        };
+    }, []);
+
     return (
-        <footer className={`${styles.footer} ${className}`}>
+        <footer className={`${styles.footer} ${className}`.trim()}>
             <div className={styles.topContainer}>
                 <div>
                     <h2 className={styles.logo}>Mov. Stu.</h2>
@@ -71,7 +100,7 @@ export default function Footer({ className = "" }: FooterProps) {
                 </div>
             </div>
 
-            <div className={styles.bottomGrid}>
+            <div ref={ref} className={styles.bottomGrid}>
                 {footerItems.map((item) => {
                     const variant =
                         item.label === "Our Socials"
@@ -84,7 +113,8 @@ export default function Footer({ className = "" }: FooterProps) {
                         <a
                             key={item.label}
                             href={item.href}
-                            className={`${styles.footerItem} ${variant}`}
+                            className={`${styles.footerItem} ${variant} ${isVisible ? styles.animateIn : ""
+                                }`}
                         >
                             {item.label}
                         </a>
