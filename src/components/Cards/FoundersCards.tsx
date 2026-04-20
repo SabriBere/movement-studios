@@ -1,10 +1,17 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import sophiaImage from "@/styles/Ilustrations/dance-8.jpg";
 import alisaImage from "@/styles/Ilustrations/dance-9.jpg";
 import styles from "./FoundersCards.module.css";
 
-const FoundersCards = () => {
+type AboutPerson = {
+    description?: string;
+    image?: StaticImageData;
+    job: string;
+    name: string;
+};
+
+export const FoundersCards = () => {
     return (
         <div className={styles.container}>
             <div className={styles.leftPanel}>
@@ -55,4 +62,49 @@ const FoundersCards = () => {
     );
 };
 
-export default FoundersCards;
+export const FoundersCardSecondary = () => {
+    const founders: AboutPerson[] = [
+        {
+            name: "Sophia Bennett",
+            job: "Founder & Instructor",
+            image: sophiaImage,
+        },
+        {
+            name: "Alisa Morris",
+            job: "Founder & Program Manager",
+            image: alisaImage,
+        },
+    ];
+
+    return (
+        <div className={styles.secondaryContainer}>
+            {founders.map((founder, index) => (
+                <article className={styles.secondaryCard} key={index}>
+                    <div className={styles.secondaryImageWrapper}>
+                        {founder.image && (
+                            <Image
+                                src={founder.image}
+                                alt={founder.name}
+                                fill
+                                className={styles.secondaryImage}
+                                sizes="(min-width: 1024px) 35vw, (min-width: 640px) 50vw, 100vw"
+                                priority
+                            />
+                        )}
+                    </div>
+
+                    <div
+                        className={
+                            index === 1
+                                ? styles.secondaryInfoCyan
+                                : styles.secondaryInfoPink
+                        }
+                    >
+                        <h3 className={styles.secondaryTitle}>{founder.name}</h3>
+                        <p className={styles.secondaryRole}>{founder.job}</p>
+                    </div>
+                </article>
+            ))}
+        </div>
+    );
+};
