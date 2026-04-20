@@ -1,0 +1,24 @@
+@reference "../../app/globals.css";
+
+.container {
+    @apply grid border-t border-white/15 sm:grid-cols-2 lg:border-t-0;
+}
+
+.card {
+    @apply grid min-h-[245px] grid-rows-[auto_1fr] 
+         border-b border-r border-white/15 
+         bg-black px-5 py-4 text-white
+         sm:min-h-[265px] lg:min-h-[250px];
+}
+
+.name {
+    @apply text-sm leading-none text-white/70;
+}
+
+.job {
+    @apply mt-1 text-sm font-semibold leading-tight text-fucsia;
+}
+
+.description {
+    @apply self-end text-sm leading-tight text-white/70;
+}
