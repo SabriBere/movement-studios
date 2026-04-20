@@ -1,0 +1,85 @@
+@reference "../../app/globals.css";
+
+.nav {
+    @apply sticky top-0 z-50 w-full text-white;
+}
+
+/* MOBILE */
+.mobileWrapper {
+    @apply relative z-50 sm:hidden;
+}
+
+.mobileBar {
+    @apply grid h-12 grid-cols-[56px_1fr] overflow-hidden bg-black;
+}
+
+.menuButton {
+    @apply flex items-center justify-center border-r border-white/15 text-white;
+}
+
+.hamburger {
+    @apply flex w-7 flex-col gap-1.5;
+}
+
+.hamburgerLine {
+    @apply h-px bg-white;
+}
+
+.mobileBrand {
+    @apply flex items-center justify-end px-4 text-xl font-light tracking-tight;
+}
+
+.mobileMenu {
+    @apply absolute inset-x-0 top-full z-50 border border-black/10 border-t-0 shadow-2xl;
+}
+
+.mobileMenuItem {
+    @apply block border-b border-black/20 px-4 py-3 text-sm font-semibold transition
+         hover:bg-blue-barry last:border-b-0;
+}
+
+.mobileMenuItem:hover {
+    color: white !important;
+}
+
+/* DESKTOP */
+.desktopBar {
+    @apply hidden h-16 w-full items-stretch overflow-hidden bg-black
+         sm:flex
+         lg:h-[68px];
+}
+
+.desktopNavList {
+    @apply flex min-w-0 flex-1 items-stretch;
+}
+
+.desktopNavItem {
+    @apply flex items-center border-r border-white/15 px-4 text-xs font-light tracking-tight text-white transition
+         hover:bg-blue-barry
+         md:px-6 md:text-sm
+         lg:px-7;
+}
+
+.desktopNavItem:hover {
+    color: white !important;
+}
+
+.desktopBrand {
+    @apply flex shrink-0 items-center px-5 text-2xl font-light tracking-tight text-white transition
+         hover:bg-blue-barry
+         md:px-7 md:text-3xl
+         lg:px-8 lg:text-[2.2rem];
+}
+
+.desktopBrand:hover {
+    color: white !important;
+}
+
+/* VARIANTS */
+.mobileCian {
+    @apply bg-cian text-black;
+}
+
+.mobileFucsia {
+    @apply bg-fucsia text-black;
+}
