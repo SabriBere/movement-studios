@@ -1,1 +1,44 @@
 @reference "../../app/globals.css";
+
+.container {
+    @apply grid grid-cols-1 border-b border-black/40 
+         min-h-[720px]
+         md:grid-cols-2 md:items-stretch md:h-[50vw]
+         lg:h-[640px];
+}
+
+/* LEFT PANEL (imagen) */
+.imagePanel {
+    @apply relative overflow-hidden bg-grey 
+         min-h-[360px] md:h-full;
+}
+
+.image {
+    @apply z-0 object-cover;
+}
+
+.sectionTitle {
+    @apply absolute left-8 top-8 whitespace-pre-line 
+         text-[clamp(4rem,10vw,8rem)] 
+         font-semibold leading-none tracking-[-0.08em] text-white
+         md:left-10 md:top-10;
+}
+
+/* RIGHT PANEL (contenido) */
+.contentPanel {
+    @apply flex items-center justify-center bg-white 
+         p-8 md:p-12 lg:p-16 
+         min-h-[360px] md:h-full;
+}
+
+.contentWrapper {
+    @apply max-w-xl md:max-w-sm lg:max-w-xl;
+}
+
+.cardTitle {
+    @apply text-2xl font-bold tracking-[-0.04em];
+}
+
+.description {
+    @apply mt-8 text-lg leading-tight tracking-[-0.03em] text-black/85 md:text-xl;
+}

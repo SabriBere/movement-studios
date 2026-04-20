@@ -1,0 +1,53 @@
+@reference "../../app/globals.css";
+
+.container {
+    @apply grid grid-cols-1 min-h-[720px] md:grid-cols-2 md:h-[50vw] lg:h-[640px];
+}
+
+.leftPanel {
+    @apply flex min-h-[360px] flex-col justify-between bg-white p-8 md:h-full md:p-12 lg:p-16;
+}
+
+.title {
+    @apply text-3xl font-bold tracking-[-0.04em];
+}
+
+.quote {
+    @apply max-w-sm text-3xl leading-tight tracking-[-0.05em];
+}
+
+.cite {
+    @apply mt-10 block text-base not-italic;
+}
+
+.rightPanel {
+    @apply grid min-h-[360px] bg-grey md:h-full;
+}
+
+.card {
+    @apply grid grid-rows-[1fr_auto];
+}
+
+.imageWrapper {
+    @apply relative min-h-[240px] overflow-hidden bg-grey md:min-h-0;
+}
+
+.image {
+    @apply object-cover;
+}
+
+.cardInfoPink {
+    @apply bg-fucsia px-6 py-4 text-black;
+}
+
+.cardInfoCyan {
+    @apply bg-cian px-6 py-4 text-black;
+}
+
+.cardTitle {
+    @apply text-xl font-bold tracking-[-0.04em];
+}
+
+.cardRole {
+    @apply mt-1 text-base;
+}
