@@ -8,17 +8,6 @@ type FooterProps = {
     className?: string;
 };
 
-const contact = {
-    address: "224 Nostrand Ave, Brooklyn, NY 11216",
-    email: "hello@movementstudiosbk.com",
-    facebookHandle: "Movement Studios Brooklyn",
-    facebookUrl: "https://www.facebook.com/movementstudiosbk",
-    instagramHandle: "@movementstudiosbk",
-    instagramUrl: "https://www.instagram.com/movementstudiosbk",
-    phoneDisplay: "(646) 555-4821",
-    phoneHref: "tel:+16465554821",
-};
-
 const footerItems = [
     {
         label: "Our Socials",
