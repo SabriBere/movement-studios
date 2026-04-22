@@ -78,7 +78,7 @@
 
 /* VARIANTS */
 .blue {
-    @apply bg-blue-barry text-white;
+    @apply bg-cian text-black;
 }
 
 .black {
