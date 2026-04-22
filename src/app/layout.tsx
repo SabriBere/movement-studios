@@ -4,7 +4,10 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
-    title: "Landing Frontend",
+    title: "Movement Studios",
+    icons: {
+        icon: "/favicon.svg",
+    },
 };
 
 export default function RootLayout({
