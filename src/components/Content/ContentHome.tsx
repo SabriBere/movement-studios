@@ -16,6 +16,7 @@ const ContentHome = () => {
             description:
                 "At Movement Studio, we’re passionate about creating a supportive and inspiring environment for dancers of all levels. Whether you’re a complete beginner eager to explore the world of modern dance, a seasoned performer looking to refine your technique, or simply someone who finds joy in moving, you’ll find a home here.",
             buttonText: "About us",
+            buttonHref: "/about",
         },
         {
             image: visionImage,
@@ -25,6 +26,7 @@ const ContentHome = () => {
             description:
                 "Get your groove on with Hip Hop, find your rhythm in Jazz, and explore connection in Contact Improvisation. Movement Studio offers a diverse range of classes for every dancer.",
             buttonText: "Reserve your spot",
+            buttonHref: "/booking",
         },
     ];
 
@@ -39,6 +41,7 @@ const ContentHome = () => {
                     cardTitle={section.cardTitle}
                     description={section.description}
                     buttonText={section.buttonText}
+                    buttonHref={section.buttonHref}
                 />
             ))}
             {/* Founders */}

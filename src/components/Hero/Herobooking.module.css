@@ -1,0 +1,17 @@
+@reference "../../app/globals.css";
+
+.containerHeroBooking {
+    @apply space-y-6;
+}
+
+.titleSection {
+    @apply text-sm uppercase tracking-[0.25em] text-white/70
+}
+
+.titleBooking {
+    @apply text-5xl font-semibold tracking-[-0.05em] text-white sm:text-6xl;
+}
+
+.subtitle {
+    @apply max-w-2xl text-lg leading-8 text-white/85;
+}

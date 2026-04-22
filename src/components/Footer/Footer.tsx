@@ -1,10 +1,22 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import styles from "./Footer.module.css";
 
 type FooterProps = {
     className?: string;
+};
+
+const contact = {
+    address: "224 Nostrand Ave, Brooklyn, NY 11216",
+    email: "hello@movementstudiosbk.com",
+    facebookHandle: "Movement Studios Brooklyn",
+    facebookUrl: "https://www.facebook.com/movementstudiosbk",
+    instagramHandle: "@movementstudiosbk",
+    instagramUrl: "https://www.instagram.com/movementstudiosbk",
+    phoneDisplay: "(646) 555-4821",
+    phoneHref: "tel:+16465554821",
 };
 
 const footerItems = [
@@ -23,6 +35,7 @@ const footerItems = [
 ];
 
 export default function Footer({ className = "" }: FooterProps) {
+    const booking = usePathname()
     const ref = useRef<HTMLDivElement | null>(null);
     const [isVisible, setIsVisible] = useState(false);
 
@@ -53,74 +66,90 @@ export default function Footer({ className = "" }: FooterProps) {
     }, []);
 
     return (
-        <footer className={`${styles.footer} ${className}`.trim()}>
-            <div className={styles.topContainer}>
-                <div>
-                    <h2 className={styles.logo}>Mov. Stu.</h2>
-                </div>
+        <>
+            {booking !== '/booking' && (
+                <footer className={`${styles.footer} ${className}`.trim()}>
+                    <div className={styles.topContainer}>
+                        <div>
+                            <h2 className={styles.logo}>Mov. Stu.</h2>
+                        </div>
 
-                <div className={styles.infoColumn}>
-                    <div>
-                        <p>Email:</p>
-                        <a href="mailto:hello@figma.com" className={styles.link}>
-                            hello@figma.com
-                        </a>
+                        <div className={styles.infoColumn}>
+                            <div>
+                                <p>Email:</p>
+                                <a href={`mailto:${contact.email}`} className={styles.link}>
+                                    {contact.email}
+                                </a>
+                            </div>
+
+                            <div id="socials">
+                                <p>Instagram:</p>
+                                <a
+                                    href={contact.instagramUrl}
+                                    className={styles.linkUnderline}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    {contact.instagramHandle}
+                                </a>
+                            </div>
+
+                            <div>
+                                <p>Facebook:</p>
+                                <a
+                                    href={contact.facebookUrl}
+                                    className={styles.linkUnderline}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    {contact.facebookHandle}
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className={styles.addressColumn} id="location">
+                            <div>
+                                <p>Address:</p>
+                                <p className={styles.addressText}>
+                                    {contact.address}
+                                    <br />
+                                    <a href={contact.phoneHref} className={styles.link}>
+                                        {contact.phoneDisplay}
+                                    </a>
+                                </p>
+                            </div>
+
+                            <p>
+                                Movement Studios ©
+                                <br />
+                                2025 All Rights Reserved
+                            </p>
+                        </div>
                     </div>
 
-                    <div>
-                        <p>Instagram:</p>
-                        <a href="#" className={styles.linkUnderline}>
-                            @figma
-                        </a>
+                    <div ref={ref} className={styles.bottomGrid}>
+                        {footerItems.map((item) => {
+                            const variant =
+                                item.label === "Our Socials"
+                                    ? styles.blue
+                                    : item.label === "Email us"
+                                        ? styles.black
+                                        : styles.fucsia;
+
+                            return (
+                                <a
+                                    key={item.label}
+                                    href={item.href}
+                                    className={`${styles.footerItem} ${variant} ${isVisible ? styles.animateIn : ""
+                                        }`}
+                                >
+                                    {item.label}
+                                </a>
+                            );
+                        })}
                     </div>
-
-                    <div>
-                        <p>Facebook:</p>
-                        <a href="#" className={styles.linkUnderline}>
-                            figma
-                        </a>
-                    </div>
-                </div>
-
-                <div className={styles.addressColumn}>
-                    <div>
-                        <p>Address:</p>
-                        <p className={styles.addressText}>
-                            224 Candyland Lane, Brooklyn, NY
-                            <br />
-                            (646) 555-4567
-                        </p>
-                    </div>
-
-                    <p>
-                        Movement Studios ©
-                        <br />
-                        2025 All Rights Reserved
-                    </p>
-                </div>
-            </div>
-
-            <div ref={ref} className={styles.bottomGrid}>
-                {footerItems.map((item) => {
-                    const variant =
-                        item.label === "Our Socials"
-                            ? styles.blue
-                            : item.label === "Email us"
-                                ? styles.black
-                                : styles.fucsia;
-
-                    return (
-                        <a
-                            key={item.label}
-                            href={item.href}
-                            className={`${styles.footerItem} ${variant} ${isVisible ? styles.animateIn : ""
-                                }`}
-                        >
-                            {item.label}
-                        </a>
-                    );
-                })}
-            </div>
-        </footer>
+                </footer>
+            )}
+        </>
     );
 }
