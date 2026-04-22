@@ -1,0 +1,97 @@
+@reference "./globals.css";
+
+.page {
+    @apply min-h-[calc(100vh-3rem)] bg-black text-white sm:min-h-[calc(100vh-4rem)];
+}
+
+.hero {
+    @apply mx-auto grid min-h-[calc(100vh-3rem)] w-full max-w-7xl gap-10 px-6 py-12 sm:min-h-[calc(100vh-4rem)] sm:px-8 sm:py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-12;
+}
+
+.copy {
+    @apply relative z-10 max-w-2xl;
+}
+
+.kicker {
+    @apply text-sm uppercase tracking-[0.28em] text-cian;
+}
+
+.title {
+    @apply mt-4 text-[clamp(4.5rem,16vw,9rem)] leading-[0.84] font-light tracking-[-0.06em];
+}
+
+.description {
+    @apply mt-6 max-w-xl text-base leading-relaxed text-white/72 sm:text-lg;
+}
+
+.actions {
+    @apply mt-10 flex flex-wrap gap-4;
+}
+
+.primaryAction {
+    @apply inline-flex bg-cian px-6 py-4 text-sm text-black transition hover:bg-fucsia hover:text-white sm:px-7;
+}
+
+.secondaryAction {
+    @apply inline-flex border border-white/20 px-6 py-4 text-sm text-white transition hover:border-blue-barry hover:bg-blue-barry sm:px-7;
+}
+
+.visual {
+    @apply relative min-h-[360px] overflow-hidden border border-white/10 bg-neutral-950 sm:min-h-[440px] lg:min-h-[560px];
+}
+
+.card {
+    @apply absolute left-6 top-6 z-10 flex w-[calc(100%-3rem)] max-w-[320px] flex-col gap-3 border border-white/12 bg-black/85 p-5 backdrop-blur-sm sm:left-8 sm:top-8;
+}
+
+.cardLabel {
+    @apply text-xs uppercase tracking-[0.28em] text-white/55;
+}
+
+.cardNumber {
+    @apply text-[clamp(4rem,16vw,7rem)] leading-none font-light tracking-[-0.07em] text-cian;
+}
+
+.ribbonBlue,
+.ribbonCyan,
+.ribbonFucsia {
+    @apply absolute;
+}
+
+.ribbonBlue {
+    inset: 16% -12% auto 18%;
+    height: 96px;
+    background: linear-gradient(90deg, #1f41ff 0%, #2a49ff 100%);
+    transform: rotate(-12deg);
+}
+
+.ribbonCyan {
+    inset: auto 12% 18% -16%;
+    height: 110px;
+    background: linear-gradient(90deg, #d0fbf9 0%, #9af1ee 100%);
+    transform: rotate(10deg);
+}
+
+.ribbonFucsia {
+    inset: auto -10% 8% 34%;
+    height: 72px;
+    background: linear-gradient(90deg, #d900ff 0%, #ff4bf5 100%);
+    transform: rotate(-8deg);
+}
+
+@media (max-width: 639px) {
+    .ribbonBlue {
+        inset: 18% -20% auto 8%;
+        height: 72px;
+    }
+
+    .ribbonCyan {
+        inset: auto 8% 17% -22%;
+        height: 88px;
+    }
+
+    .ribbonFucsia {
+        inset: auto -16% 8% 24%;
+        height: 56px;
+    }
+}
