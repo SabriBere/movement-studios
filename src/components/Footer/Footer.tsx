@@ -118,12 +118,6 @@ export default function Footer({ className = "" }: FooterProps) {
                                     </a>
                                 </p>
                             </div>
-
-                            <p>
-                                Movement Studios ©
-                                <br />
-                                2025 All Rights Reserved
-                            </p>
                         </div>
                     </div>
 
@@ -147,6 +141,11 @@ export default function Footer({ className = "" }: FooterProps) {
                                 </a>
                             );
                         })}
+                    </div>
+                    <div className="bg-black">
+                        <p className="text-white text-center py-4">
+                            © Sabri Bere  - 2026
+                        </p>
                     </div>
                 </footer>
             )}
