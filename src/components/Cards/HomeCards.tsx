@@ -10,6 +10,7 @@ type HomeCardsProps = {
     cardTitle: string;
     description: string;
     buttonText: string;
+    buttonHref?: string;
 };
 
 const HomeCards = ({
@@ -19,6 +20,7 @@ const HomeCards = ({
     cardTitle,
     description,
     buttonText,
+    buttonHref,
 }: HomeCardsProps) => {
 
     return (
@@ -47,7 +49,7 @@ const HomeCards = ({
                         {description}
                     </p>
 
-                    <ButtonCards text={buttonText} />
+                    <ButtonCards text={buttonText} route={buttonHref} />
                 </div>
             </div>
         </div>

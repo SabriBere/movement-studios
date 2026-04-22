@@ -1,0 +1,17 @@
+@reference "../../app/globals.css";
+
+.containerCardBooking {
+    @apply space-y-5 border border-black bg-black p-6 backdrop-blur-sm sm:p-8
+}
+
+.title {
+    @apply border-b border-black pb-5 last:border-b-0 last:pb-0
+}
+
+.subtitule {
+    @apply text-sm uppercase tracking-[0.22em] text-white
+}
+
+.link {
+    @apply mt-2 inline-block text-white text-xl font-medium transition
+}
