@@ -21,6 +21,10 @@ const Booking = () => {
                 <HeroBooking />
                 <CardBooking />
             </div>
+
+            <p className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2 text-center text-sm tracking-[0.2em] text-white/80 uppercase">
+                © Sabri Bere - 2026
+            </p>
         </main>
     );
 };

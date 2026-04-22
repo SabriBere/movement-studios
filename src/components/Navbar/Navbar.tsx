@@ -10,7 +10,6 @@ type NavbarProps = {
 const desktopNavItems = [
     { label: "Classes", href: "/classes" },
     { label: "About", href: "/about" },
-    { label: "224 Nostrand Ave, Brooklyn, NY", href: "#location" },
 ];
 
 const mobileNavItems = [
@@ -48,14 +47,14 @@ export default function Navbar({ className = "" }: NavbarProps) {
                 {isOpen ? (
                     <div className={styles.mobileMenu}>
                         {mobileNavItems.map((item) => (
-                            <a
+                            <Link
                                 key={item.label}
                                 href={item.href}
                                 className={`${styles.mobileMenuItem} ${styles[item.variant as keyof typeof styles]}`}
                                 onClick={() => setIsOpen(false)}
                             >
                                 {item.label}
-                            </a>
+                            </Link>
                         ))}
                     </div>
                 ) : null}
@@ -64,13 +63,13 @@ export default function Navbar({ className = "" }: NavbarProps) {
             <div className={styles.desktopBar}>
                 <div className={styles.desktopNavList}>
                     {desktopNavItems.map((item) => (
-                        <a
+                        <Link
                             key={item.label}
                             href={item.href}
                             className={styles.desktopNavItem}
                         >
                             {item.label}
-                        </a>
+                        </Link>
                     ))}
                 </div>
 
