@@ -5,13 +5,13 @@
 }
 
 .titleSection {
-    @apply text-sm uppercase tracking-[0.25em] text-black/60
+    @apply text-sm uppercase tracking-[0.25em] text-white/70
 }
 
 .titleBooking {
-    @apply text-5xl text-black font-semibold tracking-[-0.05em] sm:text-6xl;
+    @apply text-5xl font-semibold tracking-[-0.05em] text-white sm:text-6xl;
 }
 
 .subtitle {
-    @apply max-w-2xl text-black text-lg leading-8 text-black/75;
+    @apply max-w-2xl text-lg leading-8 text-white/85;
 }
