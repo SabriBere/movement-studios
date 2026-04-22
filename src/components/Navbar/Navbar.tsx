@@ -10,7 +10,6 @@ type NavbarProps = {
 const desktopNavItems = [
     { label: "Classes", href: "/classes" },
     { label: "About", href: "/about" },
-    { label: "224 Nostrand Ave, Brooklyn, NY", href: "#location" },
 ];
 
 const mobileNavItems = [
