@@ -53,7 +53,8 @@ export default function Footer({ className = "" }: FooterProps) {
                 }
             },
             {
-                threshold: 0.2,
+                threshold: 0.05,
+                rootMargin: "0px 0px -8% 0px",
             }
         );
 
@@ -118,12 +119,6 @@ export default function Footer({ className = "" }: FooterProps) {
                                     </a>
                                 </p>
                             </div>
-
-                            <p>
-                                Movement Studios ©
-                                <br />
-                                2025 All Rights Reserved
-                            </p>
                         </div>
                     </div>
 
@@ -147,6 +142,11 @@ export default function Footer({ className = "" }: FooterProps) {
                                 </a>
                             );
                         })}
+                    </div>
+                    <div className="bg-black">
+                        <p className="text-white text-center py-4">
+                            © Sabri Bere  - 2026
+                        </p>
                     </div>
                 </footer>
             )}
