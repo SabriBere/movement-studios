@@ -5,7 +5,47 @@
 }
 
 .heroImage {
-    @apply object-cover;
+    @apply object-cover transition duration-700;
+    filter: saturate(0.88) brightness(0.86);
+}
+
+.heroImageLoaded {
+    filter: saturate(1) brightness(1);
+}
+
+.loadingOverlay {
+    @apply absolute inset-0 z-0;
+    background:
+        linear-gradient(115deg, rgba(31, 65, 255, 0.22) 0%, rgba(31, 65, 255, 0) 34%),
+        linear-gradient(180deg, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.65) 100%),
+        #0e0e0e;
+    transition: opacity 0.45s ease;
+}
+
+.loadingOverlayHidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loadingPanel {
+    @apply absolute left-6 bottom-10 flex w-[min(78vw,20rem)] flex-col gap-3 sm:left-8 sm:bottom-12;
+}
+
+.loadingLabel {
+    @apply text-[0.72rem] uppercase tracking-[0.3em] text-cian/90;
+}
+
+.loadingBar {
+    @apply relative block h-[3px] overflow-hidden bg-white/15;
+}
+
+.loadingBar::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent 0%, #d0fbf9 45%, #1f41ff 100%);
+    transform: translateX(-100%);
+    animation: loadingSweep 1.2s ease-in-out infinite;
 }
 
 .content {
@@ -16,4 +56,14 @@
 
 .title {
     @apply whitespace-pre-line text-[clamp(4.5rem,16vw,10rem)] leading-[0.86] font-light tracking-[-0.04em] text-white;
+}
+
+@keyframes loadingSweep {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
 }
