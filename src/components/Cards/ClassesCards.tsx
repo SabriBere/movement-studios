@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image, { type StaticImageData } from "next/image";
 import contactImprovisationImage from "@/styles/Ilustrations/dance-2.jpeg";
 import jazzTechniqueImage from "@/styles/Ilustrations/dance-4.jpeg";
@@ -92,9 +93,9 @@ function ClassCard() {
 
             <div className={styles.footer}>
               <p className={styles.schedule}>{item.schedule}</p>
-              <a href="/booking" className={styles.link}>
+              <Link href="/booking" className={styles.link}>
                 Book Now
-              </a>
+              </Link>
             </div>
           </div>
         </article>
