@@ -13,7 +13,6 @@ Base design: [Moody Dance Studio Figma Community Template](https://www.figma.com
 - [Development](#-development)
 - [Build](#️-build)
 - [Deployment](#-deployment)
-- [Preview Media](#-preview-media)
 - [Notes](#-notes)
 - [AI-Assisted Development](#-ai-assisted-development)
 
@@ -65,21 +64,6 @@ Recommended Netlify settings:
 - Publish directory: `.next`
 
 This project is not configured around Vercel as the primary deployment target.
-
-## 🎬 Preview Media
-
-GitHub README works best with:
-
-- GIF previews embedded inline for quick visual demos
-- Clickable thumbnails that open a hosted MP4 or the live site
-
-### Landing walkthrough
-
-![Landing walkthrough](./public/README/landing-walkthrough.gif)
-
-### Footer walkthrough
-
-![Footer walkthrough](./public/README/footer-walkthrough.gif)
 
 ## 📝 Notes
 
