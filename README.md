@@ -2,6 +2,8 @@
 
 Movement Studios Landing is a frontend project inspired by a dance studio concept from the Figma Community and adapted into a polished Next.js website. The project focuses on responsive UI, visual storytelling, animation details, and a cleaner deployment workflow with Netlify.
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Movement%20Studios-00d7d7?style=for-the-badge&logo=netlify&logoColor=white)](https://movementstudios.netlify.app/)
+
 Base design: [Moody Dance Studio Figma Community Template](https://www.figma.com/site/k0QnEnpTm9bneFM0b5gHRX/Moody-Dance-Studio--Community-?node-id=0-1&p=f&t=60ASKd1N13MXZzd9-0)
 
 ## 📚 Index
@@ -11,6 +13,7 @@ Base design: [Moody Dance Studio Figma Community Template](https://www.figma.com
 - [Development](#-development)
 - [Build](#️-build)
 - [Deployment](#-deployment)
+- [Preview Media](#-preview-media)
 - [Notes](#-notes)
 - [AI-Assisted Development](#-ai-assisted-development)
 
@@ -53,6 +56,8 @@ npm run build
 
 This project is intended to be deployed on Netlify.
 
+Live site: [https://movementstudios.netlify.app/](https://movementstudios.netlify.app/)
+
 Recommended Netlify settings:
 
 - Base directory: leave empty
@@ -60,6 +65,21 @@ Recommended Netlify settings:
 - Publish directory: `.next`
 
 This project is not configured around Vercel as the primary deployment target.
+
+## 🎬 Preview Media
+
+GitHub README works best with:
+
+- GIF previews embedded inline for quick visual demos
+- Clickable thumbnails that open a hosted MP4 or the live site
+
+### Landing walkthrough
+
+![Landing walkthrough](./public/README/landing-walkthrough.gif)
+
+### Footer walkthrough
+
+![Footer walkthrough](./public/README/footer-walkthrough.gif)
 
 ## 📝 Notes
 
