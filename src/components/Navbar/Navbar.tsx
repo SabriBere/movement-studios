@@ -39,7 +39,7 @@ export default function Navbar({ className = "" }: NavbarProps) {
                         </span>
                     </button>
 
-                    <Link href="/" className={styles.mobileBrand}>
+                    <Link href="/" className={styles.mobileBrand} prefetch={false}>
                         Movement Studios.
                     </Link>
                 </div>
@@ -51,6 +51,7 @@ export default function Navbar({ className = "" }: NavbarProps) {
                                 key={item.label}
                                 href={item.href}
                                 className={`${styles.mobileMenuItem} ${styles[item.variant as keyof typeof styles]}`}
+                                prefetch={false}
                                 onClick={() => setIsOpen(false)}
                             >
                                 {item.label}
@@ -67,13 +68,14 @@ export default function Navbar({ className = "" }: NavbarProps) {
                             key={item.label}
                             href={item.href}
                             className={styles.desktopNavItem}
+                            prefetch={false}
                         >
                             {item.label}
                         </Link>
                     ))}
                 </div>
 
-                <Link href="/" className={styles.desktopBrand}>
+                <Link href="/" className={styles.desktopBrand} prefetch={false}>
                     Movement Studios.
                 </Link>
             </div>
