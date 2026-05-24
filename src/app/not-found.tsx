@@ -18,10 +18,10 @@ export default function NotFound() {
                     </p>
 
                     <div className={styles.actions}>
-                        <Link href="/" className={styles.primaryAction}>
+                        <Link href="/" className={styles.primaryAction} prefetch={false}>
                             Back Home
                         </Link>
-                        <Link href="/classes" className={styles.secondaryAction}>
+                        <Link href="/classes" className={styles.secondaryAction} prefetch={false}>
                             View Classes
                         </Link>
                     </div>

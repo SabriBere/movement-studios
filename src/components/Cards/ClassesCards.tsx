@@ -93,7 +93,7 @@ function ClassCard() {
 
             <div className={styles.footer}>
               <p className={styles.schedule}>{item.schedule}</p>
-              <Link href="/booking" className={styles.link}>
+              <Link href="/booking" className={styles.link} prefetch={false}>
                 Book Now
               </Link>
             </div>
