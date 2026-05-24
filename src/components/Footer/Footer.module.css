@@ -69,6 +69,12 @@
     animation-delay: 0.1s;
 }
 
+.copyright {
+    @apply py-4 text-center text-sm uppercase text-white;
+
+    letter-spacing: 0.35em;
+}
+
 @keyframes slideUpFade {
     to {
         opacity: 1;
