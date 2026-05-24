@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import styles from "./Footer.module.css";
 
@@ -25,40 +24,12 @@ const footerItems = [
 
 export default function Footer({ className = "" }: FooterProps) {
     const booking = usePathname()
-    const ref = useRef<HTMLDivElement | null>(null);
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        const element = ref.current;
-
-        if (!element) return;
-
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                    observer.unobserve(entry.target);
-                }
-            },
-            {
-                threshold: 0.05,
-                rootMargin: "0px 0px -8% 0px",
-            }
-        );
-
-        observer.observe(element);
-
-        return () => {
-            observer.unobserve(element);
-            observer.disconnect();
-        };
-    }, []);
 
     return (
         <>
             {booking !== '/booking' && (
                 <footer className={`${styles.footer} ${className}`.trim()}>
-                    <div ref={ref} className={styles.bottomGrid}>
+                    <div className={styles.bottomGrid}>
                         {footerItems.map((item) => {
                             const variant =
                                 item.label === "Our Socials"
@@ -71,8 +42,7 @@ export default function Footer({ className = "" }: FooterProps) {
                                 <a
                                     key={item.label}
                                     href={item.href}
-                                    className={`${styles.footerItem} ${variant} ${isVisible ? styles.animateIn : ""
-                                        }`}
+                                    className={`${styles.footerItem} ${variant} ${styles.animateIn}`}
                                 >
                                     {item.label}
                                 </a>
@@ -80,8 +50,8 @@ export default function Footer({ className = "" }: FooterProps) {
                         })}
                     </div>
                     <div className="bg-black">
-                        <p className="text-white text-center py-4">
-                            © Sabri Bere  - 2026
+                        <p className={styles.copyright}>
+                            © SABRI BERE - 2026
                         </p>
                     </div>
                 </footer>
