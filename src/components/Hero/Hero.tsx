@@ -26,7 +26,10 @@ const Hero = ({ image, title }: { image: StaticImageData, title: string }) => {
           className={`${styles.heroImage} ${isLoaded ? styles.heroImageLoaded : ""}`}
           sizes="100vw"
           placeholder="blur"
-          priority
+          preload
+          loading="eager"
+          fetchPriority="high"
+          quality={75}
           onLoad={() => setIsLoaded(true)}
         />
 
