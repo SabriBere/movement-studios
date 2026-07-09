@@ -20,8 +20,8 @@ export default function Herobar({
                     fill
                     className={styles.image}
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    loading="eager"
-                    fetchPriority="high"
+                    priority
+                    placeholder="blur"
                 />
                 <div className={styles.content}>
                     <h1 className={styles.title}>{heading}</h1>
