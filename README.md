@@ -27,20 +27,21 @@ This project is used to practice and refine:
 
 ## 🧰 Current Stack
 
-- Next.js 15
+- Next.js 16
 - React 19
-- TypeScript
+- TypeScript 5
 - Tailwind CSS 4
-- ESLint
+- ESLint 9
 - Prettier
+- pnpm
 
 ## 🚀 Development
 
 Install dependencies and start the local server:
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 ## 🏗️ Build
@@ -48,7 +49,7 @@ npm run dev
 Create a production build locally:
 
 ```bash
-npm run build
+pnpm build
 ```
 
 ## 🌐 Deployment
@@ -60,7 +61,7 @@ Live site: [https://movementstudios.netlify.app/](https://movementstudios.netlif
 Recommended Netlify settings:
 
 - Base directory: leave empty
-- Build command: `npm run build`
+- Build command: `pnpm build`
 - Publish directory: `.next`
 
 This project is not configured around Vercel as the primary deployment target.
