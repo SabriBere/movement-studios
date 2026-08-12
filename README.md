@@ -1,6 +1,6 @@
 # Movement Studios Landing
 
-Movement Studios Landing is a frontend project inspired by a dance studio concept from the Figma Community and adapted into a polished Next.js website. The project focuses on responsive UI, visual storytelling, animation details, and a cleaner deployment workflow with Netlify.
+Movement Studios is a responsive dance studio landing page built with Next.js. Starting from a Figma Community reference, I adapted the interface into a component-based production site with responsive layouts, route-level error handling, accessible navigation, and a Netlify deployment workflow.
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Movement%20Studios-00d7d7?style=for-the-badge&logo=netlify&logoColor=white)](https://movementstudios.netlify.app/)
 
@@ -8,24 +8,24 @@ Base design: [Moody Dance Studio Figma Community Template](https://www.figma.com
 
 ## 📚 Index
 
-- [Goal](#-goal)
-- [Current Stack](#-current-stack)
+- [Implementation](#-implementation)
+- [Stack](#-stack)
 - [Development](#-development)
 - [Build](#️-build)
 - [Deployment](#-deployment)
-- [Notes](#-notes)
-- [AI-Assisted Development](#-ai-assisted-development)
+- [Credits and license](#-credits-and-license)
 
-## 🎯 Goal
+## ✨ Implementation
 
-This project is used to practice and refine:
+Key implementation decisions include:
 
-- Responsive layout work with modern CSS and Tailwind utilities.
-- Component-driven UI with Next.js App Router.
-- Visual polish across navigation, hero sections, cards, footer, and error states.
-- Production deployment flows using Netlify preview and production deploys.
+- Component-driven UI with Next.js App Router and TypeScript.
+- Responsive layouts tailored across mobile, tablet, and desktop breakpoints.
+- Reusable navigation, hero, card, footer, and booking components.
+- Route-level not-found state and semantic, descriptive image alternatives.
+- Production builds and deploy previews through Netlify.
 
-## 🧰 Current Stack
+## 🧰 Stack
 
 - Next.js 16
 - React 19
@@ -66,12 +66,7 @@ Recommended Netlify settings:
 
 This project is not configured around Vercel as the primary deployment target.
 
-## 📝 Notes
+## 📜 Credits and license
 
-- The app uses the Next.js App Router.
-- Netlify deploy previews are useful for validating changes before merging to production.
-- Large hero images may still benefit from additional compression for the best production performance.
-
-## 🤖 AI-Assisted Development
-
-This project was developed with AI-assisted iteration as part of the workflow, especially for UI refinement, responsive behavior, documentation, and implementation support.
+- The visual reference is the [Moody Dance Studio Figma Community Template](https://www.figma.com/site/k0QnEnpTm9bneFM0b5gHRX/Moody-Dance-Studio--Community-?node-id=0-1&p=f&t=60ASKd1N13MXZzd9-0). Third-party designs and assets retain their respective licenses and attribution requirements.
+- The source code in this repository is available under the [MIT License](LICENSE).

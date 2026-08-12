@@ -5,6 +5,8 @@ import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
     title: "Movement Studios",
+    description:
+        "Responsive dance studio landing page built with Next.js and Tailwind CSS.",
     icons: {
         icon: "/favicon.svg",
     },
