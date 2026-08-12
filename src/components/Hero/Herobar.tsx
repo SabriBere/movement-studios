@@ -16,7 +16,7 @@ export default function Herobar({
             <div className={styles.wrapper}>
                 <Image
                     src={heroImage}
-                    alt="findFlow"
+                    alt="Dancer moving in the Movement Studios space"
                     fill
                     className={styles.image}
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"

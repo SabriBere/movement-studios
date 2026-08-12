@@ -30,7 +30,7 @@ export const FoundersCards = () => {
                     <div className={styles.imageWrapper}>
                         <Image
                             src={sophiaImage}
-                            alt="sophia"
+                            alt="Sophia Bennett, founder and instructor"
                             fill
                             className={styles.image}
                             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
@@ -46,7 +46,7 @@ export const FoundersCards = () => {
                     <div className={styles.imageWrapper}>
                         <Image
                             src={alisaImage}
-                            alt="alisa"
+                            alt="Alisa Morris, founder and program manager"
                             fill
                             className={styles.image}
                             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"

@@ -37,7 +37,7 @@ export default function ContentClasses() {
                     <div className={styles.imageWrapper}>
                         <Image
                             src={ourPromise}
-                            alt="our promises"
+                            alt="Dancers practicing together in the studio"
                             fill
                             className={styles.image}
                         />
