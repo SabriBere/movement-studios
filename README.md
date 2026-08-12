@@ -4,8 +4,6 @@ Movement Studios is a responsive dance studio landing page built with Next.js. S
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Movement%20Studios-00d7d7?style=for-the-badge&logo=netlify&logoColor=white)](https://movementstudios.netlify.app/)
 
-Base design: [Moody Dance Studio Figma Community Template](https://www.figma.com/site/k0QnEnpTm9bneFM0b5gHRX/Moody-Dance-Studio--Community-?node-id=0-1&p=f&t=60ASKd1N13MXZzd9-0)
-
 ## 📚 Index
 
 - [Implementation](#-implementation)
