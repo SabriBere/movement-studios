@@ -70,4 +70,3 @@ This project is not configured around Vercel as the primary deployment target.
 
 - The visual reference is the [Moody Dance Studio Figma Community Template](https://www.figma.com/site/k0QnEnpTm9bneFM0b5gHRX/Moody-Dance-Studio--Community-?node-id=0-1&p=f&t=60ASKd1N13MXZzd9-0). Third-party designs and assets retain their respective licenses and attribution requirements.
 - The source code in this repository is available under the [MIT License](LICENSE).
-- AI-assisted iteration was used as a supporting tool during development; the implementation, adaptation, and technical decisions are my own.
